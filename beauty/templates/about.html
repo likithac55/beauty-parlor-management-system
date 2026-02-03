@@ -1,0 +1,54 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<style>
+  .zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+</style>
+<div style="background-attachment:absolute;
+    background-position:0% 0%;
+  background-size: cover;
+  background-image: url('{% static 'images/back2.jpg' %}');
+  background-repeat:no-repeat; 
+  width:100%;
+  height:100%;
+  position:absolute;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 style="font-family:'Monotype Corsiva';color:red;font-weight:bold;font-size:40px;margin-top:1%">ABOUT US</h4>
+        <hr>
+        <p style="color:white;font-weight:bold;font-family:cursive;font-size:20px">Our main focus is on quality and
+          hygiene. Our Parlour is well equipped with advanced technology equipments and provides best quality services.
+          Our staff is well trained and experienced, offering advanced services in:
+        </p>
+        <ul style="color:white;font-weight:bold;font-family:cursive;font-size:20px">
+          <li>Skin</li>
+          <li>Hair</li>
+          <li>Body Shaping</li>
+        </ul>
+        <p style="color:white;font-weight:bold;font-family:cursive;font-size:20px">
+          that will provide you with a luxurious experience and leave you feeling relaxed and stress free. The
+          specialities in the parlour are, apart from regular:
+        </p>
+        <ul style="color:white;font-weight:bold;font-family:cursive;font-size:20px">
+          <li>Bleaching and Facials</li>
+          <li>Many types of hairstyles</li>
+          <li>Bridal and Cine Make-up</li>
+          <li>Different types of Facials</li>
+          <li>Fashion hair colorings</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
